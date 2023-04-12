@@ -1,0 +1,35 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+// common.css 통합 = Header, Footer Design
+// main.css = Main Design
+// responsive.css = 반응형 Design
+#h_bg {
+    background:$bg2; position:fixed; left:0; top:0; z-index:999;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    width:100%;
+    header {
+        height:104px; width:1224px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;
+        h1 {a{img{}}}
+        .right {
+            nav {
+                a {margin-left:10px;}
+                a:hover {color:$point1;}
+                a:last-child:hover {color:$bg1; background-color:$point2;}
+                a:nth-child(1) {background:url(../images/);}
+                a:nth-child(2) {background:url(../images/banner_gray2.png)no-repeat; padding-left:30px; background-size:25px;}
+                a:nth-child(3) {}
+                a:nth-child(3)::before {background:url(../images/language.png)center no-repeat; background-size:20px; content:''; display:inline-block; width:20px; height:20px; position:relative; top:4px; left:-2px; margin-right:5px;}
+                a:nth-child(4) {i{font-weight:600;}}
+                a:nth-child(4)::before {}
+                .all_nav {background:$point1 url(../images/allMenu.png) no-repeat 5px center; color:$bg2; padding:10px 5px 10px 30px;}
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+main #visual {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/hero-bg-md-01.gif) center;
+  background-size: cover;
+}
+main #visual h1 {
+  padding-top: 300px;
+  font-size: 3.75rem;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: -0.07em;
+}
+main #visual h1 em {
+  font-size: 3.75rem;
+  color: #189bfa;
+}
+main #visual .category {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0 60px;
+}
+main #visual .category a {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  position: relative;
+}
+main #visual .category a::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main #visual .category a:first-child::before {
+  display: none;
+}
+main #visual .category a:first-child {
+  background: #ff5252;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+main #visual .category a:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+main #visual .view_box {
+  background: rgba(0, 0, 0, 0.4);
+  width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+}
+main #visual .view_box #viewFrm fieldset {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px;
+}
+main #visual .view_box #viewFrm fieldset #number_view {
+  padding: 10px;
+}
+main #visual .view_box #viewFrm fieldset input {
+  margin: 0 5px;
+  padding: 0 15px;
+}
+main #visual .view_box #viewFrm fieldset #view_btn {
+  background: #189bfa;
+  color: #fff;
+}
+main #visual .view_box .list {
+  padding: 20px 0;
+  overflow: hidden;
+}
+main #visual .view_box .list a {
+  color: #fff;
+  margin-right: 20px;
+  padding: 10px;
+  float: left;
+}
+main #visual .view_box .list a::after {
+  content: "\f059";
+  font-weight: 600;
+  color: #189bfa;
+  margin-left: 5px;
+}
+main #visual .view_box .list a:first-child::before {
+  display: none;
+}
+main #visual .view_box .list .sample_view {
+  float: right;
+  border: 1px solid #fff;
+}
+main #visual .view_box .list .sample_view::before {
+  content: "\f249";
+  font-weight: 600;
+  color: #189bfa;
+  margin-right: 5px;
+}
+main #visual .view_box .list .sample_view::after {
+  content: none;
+}
+main .container {
+  background: aqua;
+  width: 1224px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  text-align: center;
+}
+main .container .sub_title {
+  font-weight: 400;
+  color: #222;
+  font-size: 0.9rem;
+}
+main .container .sub_title::after {
+  content: "";
+  display: block;
+  background: #aaa;
+  width: 15px;
+  height: 2px;
+  margin: 10px auto 30px;
+}
+main .container h1 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+main .container .contents {
+  color: #aaa;
+}
+main #video .tab {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+main #video .tab a {
+  background: purple;
+  width: 100px;
+  padding: 25px 0;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+main #video .tab a:first-child {
+  border-bottom: 4px solid #189bfa;
+}
+main #video .tab_contents .tab1 {
+  position: relative;
+}
+main #video .tab_contents .tab1 video {
+  width: 80%;
+}
+main #video .tab_contents .tab1 .img img {
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+main #video .tab_contents .tab2 p {
+  background: lime;
+  padding: 200px 0;
+}
+main #menu .tab {
+  background: pink;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+main #menu .tab a {
+  background: #fff;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #222;
+  margin-left: 10px;
+  position: relative;
+  bottom: -1px;
+}
+main #menu .tab a:first-child {
+  margin: 0;
+  border-bottom: 0;
+}
+main #menu .tab a:first-child::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #189bfa;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main #menu .tab_contents {
+  background: coral;
+}
+main #menu .tab_contents .tab1 {
+  display: grid;
+  grid-template-areas: "title sub_title" "big_img list" "intro .";
+  margin: 0 auto;
+  text-align: left;
+}
+main #menu .tab_contents .tab1 h2 {
+  grid: "title";
+  font-size: 1.75rem;
+  padding: 20px 0;
+}
+main #menu .tab_contents .tab1 h2 + h2 {
+  grid: "sub_title";
+}
+main #menu .tab_contents .tab1 h2:first-child {
+  color: #189bfa;
+}
+main #menu .tab_contents .tab1 .big {
+  grid: "big_img";
+}
+main #menu .tab_contents .tab1 ul {
+  grid: "list";
+}
+main #menu .tab_contents .tab1 ul li:nth-child(1) {
+  background: url(../images/crash-count.png) center no-repeat;
+}
+main #menu .tab_contents .tab1 ul li:nth-child(2)::before {
+  background: url();
+}
+main #menu .tab_contents .tab1 ul li:nth-child(3)::before {
+  background: url();
+}
+main #menu .tab_contents .tab1 .intro {
+  grid: "intro";
+}
+main #menu .tab_contents .tab2, main #menu .tab_contents .tab3, main #menu .tab_contents .tab4 {
+  background: pink;
+  padding: 200px 0;
+}/*# sourceMappingURL=main.css.map */

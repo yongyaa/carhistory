@@ -1,0 +1,133 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt3:#000;
+
+main {
+    #visual {margin:0 auto; width:100%; height:100vh; background:url(../images/hero-bg-md-01.gif)center; background-size:cover;
+        h1 {
+            padding-top:300px; 
+            font-size:3.75rem;
+            text-align:center;
+            line-height:1.3;
+            letter-spacing:-0.07em;
+        em {font-size:3.75rem; color:$point1;}
+        }
+        .category {
+            display:flex; justify-content:center;
+            margin:120px 0 60px;
+            a {background:rgba(255,255,255,0.8); padding:25px; position:relative;}
+            a::before {content:''; display:inline-block; width:1px; height:100%; background:$txt1; position:absolute; left:0; top:0;}
+            a:first-child::before {display:none;}
+            a:first-child {background:$point2; color:$bg2; border-top-left-radius:20px; border-bottom-left-radius:20px;}
+            a:last-child {border-top-right-radius:20px; border-bottom-right-radius:20px;}
+        }
+        .view_box {
+            background:rgba(0,0,0,0.4); width:1000px; padding:30px; margin:0 auto;
+            #viewFrm {
+                fieldset {
+                    display:grid; grid-template-columns:150px 1fr 150px; grid-template-rows:50px;
+                    #number_view {padding:10px; option {}}
+                    input {margin:0 5px; padding:0 15px;}
+                    #view_btn {background:$point1; color:$bg2;}
+                }
+                }
+        .list {
+                padding:20px 0; overflow:hidden;
+                a {color:$bg2; margin-right:20px; padding:10px; float:left;}
+                a::after {content:'\f059'; font-weight:600; color:$point1; margin-left:5px;}
+                // a::before {content:''; display:inline-block; background:$bg2; width:1px; height:15px; margin-right:20px;}
+                a:first-child::before {display:none;}
+                .sample_view {float:right; border:1px solid $bg2;}
+                .sample_view::before {content:'\f249'; font-weight:600; color:$point1; margin-right:5px;}
+                .sample_view::after {content:none;}
+            }
+        }
+    }//e:#visual
+    //공통 container 부제목~내용 영역
+    .container {background:aqua; width:1224px; margin:0 auto; padding:100px 0 0; text-align:center;
+        .sub_title {font-weight:400; color:$txt2; font-size:0.9rem;}
+        .sub_title::after {content:''; display:block; background:$txt1; width:15px; height:2px; margin:10px auto 30px;}
+        h1 {font-size:1.75rem; margin-bottom:20px;}
+        .contents {color:$txt1;}
+    }
+    //video 카히스토리 영상
+    #video {
+        .tab {display: flex; justify-content: center; padding:10px 0;
+            a {background:purple;width: 100px; padding :25px 0; font-size:1.2rem; margin-bottom:20px;}
+            a:first-child {border-bottom:4px solid $point1;}
+        }
+        .tab_contents {
+            .tab1 {
+                position:relative;
+                video {width:80%;}
+                .img {
+                    img{
+                        position:absolute; top:200px; right:0;
+                    }
+                }
+            }
+            .tab2 {p{background:lime; padding:200px 0;}}
+        }
+    }
+    //menu 자주 사용하는 메뉴
+    #menu {
+        .tab {
+            background:pink;
+            border-bottom:1px solid $txt2;
+            display:flex;
+            justify-content:center;
+            margin:30px 0;
+            a {
+                background:$bg2;
+                width:150px; height:50px;
+                line-height:50px;
+                border:1px solid $txt2;
+                margin-left:10px;
+                position:relative; bottom:-1px;
+            }
+            a:first-child {margin:0; border-bottom:0;}
+            a:first-child::before {content:''; display:block; height:5px; width:100%; background:$point1; position:absolute; top:0; left:0;}        
+        }
+        .tab_contents {
+            background:coral;
+            >div {}
+            .tab1 {
+                display:grid;
+                grid-template-areas:
+                'title sub_title'
+                'big_img list'
+                'intro .';
+                margin:0 auto;
+                text-align:left;
+                h2 {grid:'title'; font-size:1.75rem; padding:20px 0;}
+                h2+h2 {grid:'sub_title';}
+                h2:first-child {color:$point1;}
+                .big {grid:'big_img';}
+                ul {
+                    grid:'list';
+                    li {}
+                    li:nth-child(1) {background:url(../images/crash-count.png)center no-repeat;}
+                    li:nth-child(2) {}
+                    li:nth-child(3) {}
+                    li::before {}
+                    li:nth-child(1)::before {}
+                    li:nth-child(2)::before {background:url();}
+                    li:nth-child(3)::before {background:url();}
+                }
+                .intro {grid:'intro';}
+                .intro + h2 {}
+
+            }
+            .tab2 {}
+            .tab3 {}
+            .tab4 {}
+            .tab2,.tab3,.tab4 {background:pink; padding:200px 0;}
+        }
+    }
+} //e:main

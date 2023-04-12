@@ -1,0 +1,55 @@
+#h_bg {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+#h_bg header {
+  height: 104px;
+  width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#h_bg header .right nav a {
+  margin-left: 10px;
+}
+#h_bg header .right nav a:hover {
+  color: #189bfa;
+}
+#h_bg header .right nav a:last-child:hover {
+  color: #eee;
+  background-color: #ff5252;
+}
+#h_bg header .right nav a:nth-child(1) {
+  background: url(../images/);
+}
+#h_bg header .right nav a:nth-child(2) {
+  background: url(../images/banner_gray2.png) no-repeat;
+  padding-left: 30px;
+  background-size: 25px;
+}
+#h_bg header .right nav a:nth-child(3)::before {
+  background: url(../images/language.png) center no-repeat;
+  background-size: 20px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  left: -2px;
+  margin-right: 5px;
+}
+#h_bg header .right nav a:nth-child(4) i {
+  font-weight: 600;
+}
+#h_bg header .right nav .all_nav {
+  background: #189bfa url(../images/allMenu.png) no-repeat 5px center;
+  color: #fff;
+  padding: 10px 5px 10px 30px;
+}/*# sourceMappingURL=common.css.map */

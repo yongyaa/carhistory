@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카히스토리</title>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="h_bg">
+        <header>
+            
+        <h1><a href="#"><img src="./images/logo.png" alt="Carhistory"></a></h1>
+        <div class="right">
+            <nav>
+                <a href="#">충전회원</a>
+                <a href="#">보험개발원</a>
+                <a href="#">LANG</a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass" title="검색"></i></a>
+                <a href="#" class="all_nav">전체메뉴</a>
+            </nav>
+        </div>
+        </header>
+    </div>
+    <main>
+        <div id="visual">
+            <h1>중고차 매장가서 보기전에<br><em>카히스토리 확인 하세요</em></h1>
+            <div class="category">
+                <a href="#">사고이력조회</a>
+                <a href="#">무료침수차량조회</a>
+                <a href="#">무료폐차사고조회</a>
+                <a href="#">자동차보험료조회</a>
+            </div>
+            <div class="view_box">
+                <form action="#" method="post" id="viewFrm">
+                    <fieldset>
+                        <legend class="skip">사고이력조회양식</legend>
+                        <select name="number_view" id="number_view">
+                            <option value="number1">차량번호</option>
+                            <option value="number2">차대번호</option>
+                        </select>
+                        <input type="text" placeholder="띄어쓰기 없이 차량번호를 입력하세요.">
+                        <button type="button" id="view_btn">조회하기</button>
+                    </fieldset>
+                </form>
+                <div class="list">
+                    <a href="#">차대번호란?</a>
+                    <a href="#">무료침수사고조회</a>
+                    <a href="#">무료페차사고조회</a>
+                    <a href="#">카히스토리</a>
+                    <a href="#" class="sample_view">샘플 보고서 보기</a>
+                </div>
+            </div>
+        </div> <!-- visual -->
+        <div id="video" class="container">
+            <p class="sub_title">VIDEO</p>
+            <h1>카히스토리 영상</h1>
+            <p class="contents">영상을 통해 카히스토리 사용방법 등 자세한 정보를 확인해보세요.</p>
+            <div class="tab">
+                <a href="#">안내</a>
+                <a href="#">사용방법</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab1">
+                    <video src="./video/carhistory.mp4" autoplay muted loop></video>
+                    <div class="img"><img src="./images/video.png" alt=""></div>
+                </div> <!-- 안내 내용 -->
+                <div class="tab2"> <p>사용방법안내</p></div> <!-- 방법 내용 -->
+            </div>
+        </div> <!-- video -->
+        <div id="menu" class="container">
+            <p class="sub_title">MENU</p>
+            <h1>자주 사용하는 메뉴</h1>
+            <p class="contents">자주 사용하는 메뉴로 카히스토리를 보다 편리하게 이용하세요.</p>
+            <div class="tab">
+                <a href="#">사고이력조회</a>
+                <a href="#">정보이용료</a>
+                <a href="#">조회방법</a>
+                <a href="#">용어설명</a>
+            </div>
+            <div class="tab_contents">
+                <div class="tab1">
+                    <h2>사고이력조회 &gt;</h2>
+                    <h2>왜 사고이력조회가 필수인가?</h2>
+                    <p class="big"><img src="./images/car-new.png" alt=""></p>
+                    <ul>
+                        <li>
+                            <p class="num">01</p>
+                            <h3>평균 사고 건수 2.93건<span>(2016년 카히스토리 조회 차량 기준)</span></h3>
+                        </li>
+                        <li><p class="num">02</p><h3>운전자의 안전을 위협하는 침수, 전손 확인</h3></li>
+                        <li><p class="num">03</p><h3>허위 매물 방지</h3></li>
+                    </ul>
+                    <div class="intro">
+                        <p>관련메뉴</p>
+                        <p>-조회가 원활하게 안되시나요?<a href="#">고객문의 바로가기 &gt;</a></p>
+                    </div>
+                    </div>
+                <div class="tab2">정보이용료 내용</div>
+                <div class="tab3">조회방법 내용</div>
+                <div class="tab4">용어설명 내용</div>
+            </div>시마다 한조 대기중.....
+        </div> <!-- menu -->
+    </main>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
